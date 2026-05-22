@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300" width="600" height="300">
+  <defs>
+    <linearGradient id="bodyGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#4a90e2"/>
+      <stop offset="100%" stop-color="#1e5fa8"/>
+    </linearGradient>
+    <linearGradient id="cabGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#5ba3f5"/>
+      <stop offset="100%" stop-color="#2a6fc2"/>
+    </linearGradient>
+    <radialGradient id="lightGrad" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#fffde7"/>
+      <stop offset="70%" stop-color="#ffeb3b"/>
+      <stop offset="100%" stop-color="#f9a825"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Rails -->
+  <rect x="0" y="245" width="600" height="6" fill="#8b8b8b"/>
+  <rect x="0" y="260" width="600" height="6" fill="#8b8b8b"/>
+
+  <!-- Sleepers -->
+  <g fill="#6b4423">
+    <rect x="20"  y="251" width="30" height="10"/>
+    <rect x="80"  y="251" width="30" height="10"/>
+    <rect x="140" y="251" width="30" height="10"/>
+    <rect x="200" y="251" width="30" height="10"/>
+    <rect x="260" y="251" width="30" height="10"/>
+    <rect x="320" y="251" width="30" height="10"/>
+    <rect x="380" y="251" width="30" height="10"/>
+    <rect x="440" y="251" width="30" height="10"/>
+    <rect x="500" y="251" width="30" height="10"/>
+    <rect x="560" y="251" width="30" height="10"/>
+  </g>
+
+  <!-- Train body (main hull) -->
+  <rect x="80" y="120" width="380" height="120" rx="10" fill="url(#bodyGrad)" stroke="#0d3a72" stroke-width="2"/>
+
+  <!-- Cab (front) -->
+  <path d="M 460 240 L 460 140 Q 460 120 480 115 L 540 130 Q 555 135 555 150 L 555 240 Z"
+        fill="url(#cabGrad)" stroke="#0d3a72" stroke-width="2"/>
+
+  <!-- Windshield -->
+  <path d="M 475 145 Q 475 132 490 128 L 535 140 Q 545 144 545 155 L 545 180 L 475 180 Z"
+        fill="#b3e0ff" stroke="#0d3a72" stroke-width="2"/>
+
+  <!-- Side windows -->
+  <g fill="#b3e0ff" stroke="#0d3a72" stroke-width="2">
+    <rect x="100" y="140" width="60" height="40" rx="4"/>
+    <rect x="180" y="140" width="60" height="40" rx="4"/>
+    <rect x="260" y="140" width="60" height="40" rx="4"/>
+    <rect x="340" y="140" width="60" height="40" rx="4"/>
+  </g>
+
+  <!-- Yellow stripe -->
+  <rect x="80" y="200" width="475" height="10" fill="#ffd54f"/>
+
+  <!-- Chimney -->
+  <rect x="120" y="90" width="30" height="35" fill="#1a4d8f" stroke="#0d3a72" stroke-width="2"/>
+  <ellipse cx="135" cy="90" rx="18" ry="6" fill="#2a6fc2" stroke="#0d3a72" stroke-width="2"/>
+
+  <!-- Steam puffs -->
+  <g fill="#ffffff" opacity="0.85">
+    <circle cx="135" cy="70" r="12"/>
+    <circle cx="150" cy="55" r="14"/>
+    <circle cx="170" cy="45" r="16"/>
+    <circle cx="195" cy="38" r="13"/>
+  </g>
+
+  <!-- Headlight -->
+  <circle cx="545" cy="195" r="12" fill="url(#lightGrad)" stroke="#0d3a72" stroke-width="2"/>
+
+  <!-- Wheels -->
+  <g>
+    <circle cx="140" cy="245" r="22" fill="#2c2c2c" stroke="#0d3a72" stroke-width="2"/>
+    <circle cx="140" cy="245" r="10" fill="#666"/>
+    <circle cx="140" cy="245" r="3" fill="#1a1a1a"/>
+
+    <circle cx="230" cy="245" r="22" fill="#2c2c2c" stroke="#0d3a72" stroke-width="2"/>
+    <circle cx="230" cy="245" r="10" fill="#666"/>
+    <circle cx="230" cy="245" r="3" fill="#1a1a1a"/>
+
+    <circle cx="320" cy="245" r="22" fill="#2c2c2c" stroke="#0d3a72" stroke-width="2"/>
+    <circle cx="320" cy="245" r="10" fill="#666"/>
+    <circle cx="320" cy="245" r="3" fill="#1a1a1a"/>
+
+    <circle cx="410" cy="245" r="22" fill="#2c2c2c" stroke="#0d3a72" stroke-width="2"/>
+    <circle cx="410" cy="245" r="10" fill="#666"/>
+    <circle cx="410" cy="245" r="3" fill="#1a1a1a"/>
+
+    <circle cx="510" cy="245" r="22" fill="#2c2c2c" stroke="#0d3a72" stroke-width="2"/>
+    <circle cx="510" cy="245" r="10" fill="#666"/>
+    <circle cx="510" cy="245" r="3" fill="#1a1a1a"/>
+  </g>
+
+  <!-- Connecting rod -->
+  <rect x="135" y="242" width="380" height="6" fill="#444" rx="2"/>
+</svg>
